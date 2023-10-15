@@ -13,10 +13,10 @@ const Hero = () => {
         </button>
       </nav>
       <h1 className="head_text">
-        Summarize Articles with <br className="max-md:hidden" />
+        One Paragraph Article Summarizer <br className="max-md:hidden" />
         <span className="blue1_gradient">OpenAI GPT-4</span>
       </h1>
-      <h2 className="desc">Summarize Your Articles!</h2>
+      <h2 className="desc">Summarize Any Article To One Paragraph!</h2>
     </header>
   );
 };

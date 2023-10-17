@@ -1,8 +1,5 @@
-# React + Vite
+# AI Summarizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I've created an AI summarizer powered by OpenAI's GPT-4 with the help of Adrian. It can take a URL as input and distill lengthy web articles into a single, coherent summary. This tool leverages GPT-4's advanced natural language understanding, making it effortless for users to obtain concise yet informative article summaries. It's a game-changer for staying informed in our fast-paced digital world.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Adrian https://gist.github.com/adrianhajdin/23b2d30e39cd2d92cfa9f436c19afe27

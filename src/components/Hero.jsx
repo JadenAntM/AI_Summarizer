@@ -4,9 +4,7 @@ const Hero = () => {
       <nav className="flex flex-col items-end w-full mb-10 pt-3">
         <button
           type="button"
-          onClick={() =>
-            window.open("https://github.com/JadenAntM?tab=repositories")
-          }
+          onClick={() => window.open("https://github.com/JadenAntM")}
           className="black_btn"
         >
           GitHub

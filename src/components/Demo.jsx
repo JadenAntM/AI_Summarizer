@@ -61,6 +61,12 @@ const Demo = () => {
     }
   };
 
+  const handleCopySummary = () => {
+    if (article.summary) {
+      handleCopy(article.summary);
+    }
+  };
+
   return (
     <section className="mt-16 w-full max-w-xl">
       {/* Search */}
@@ -131,9 +137,18 @@ const Demo = () => {
         ) : (
           article.summary && (
             <div className="flex flex-col gap-3">
-              <h2 className="font-satoshi font-bold text-eggshell text-xl">
-                Article <span className="purple2_gradient">Summary</span>
-              </h2>
+              <div className="flex justify-between items-center">
+                <h2 className="font-satoshi font-bold text-eggshell text-xl">
+                  Article <span className="purple2_gradient">Summary</span>
+                </h2>
+                <button className="copy_btn" onClick={handleCopySummary}>
+                  <img
+                    src={copied === article.summary ? tick : copy}
+                    alt={copied === article.summary ? "tick_icon" : "copy_icon"}
+                    className="w-[40%] h-[40%] object-contain"
+                  />
+                </button>
+              </div>
               <div className="summary_box">
                 <p className="font-inter font-medium text-sm text-gray-800">
                   {article.summary}
@@ -146,4 +161,5 @@ const Demo = () => {
     </section>
   );
 };
+
 export default Demo;

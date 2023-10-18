@@ -51,7 +51,6 @@
 .black_btn {
   @apply rounded-full
     border
-    border-black
     bg-violet-600
     py-1.5
     px-5

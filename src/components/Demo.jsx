@@ -14,12 +14,17 @@ const Demo = () => {
   const [getSummary, { error, isFetching }] = useLazyGetSummaryQuery();
 
   useEffect(() => {
-    const articlesFromLocalStorage = JSON.parse(
-      localStorage.getItem("articles")
-    );
+    try {
+      const articlesFromLocalStorage = JSON.parse(
+        localStorage.getItem("articles")
+      );
 
-    if (articlesFromLocalStorage) {
-      setAllArticles(articlesFromLocalStorage);
+      if (articlesFromLocalStorage) {
+        setAllArticles(articlesFromLocalStorage);
+      }
+    } catch (error) {
+      // Catches error if not enough space or other reason
+      console.error("Error while accessing localStorage:", error);
     }
   }, []);
 
@@ -126,11 +131,11 @@ const Demo = () => {
         ) : (
           article.summary && (
             <div className="flex flex-col gap-3">
-              <h2 className="font-satoshi font-bold text-gray-600 text-xl">
-                Article <span className="blue2_gradient">Summary</span>
+              <h2 className="font-satoshi font-bold text-eggshell text-xl">
+                Article <span className="purple2_gradient">Summary</span>
               </h2>
               <div className="summary_box">
-                <p className="font-inter font-medium text-sm text-gray-700">
+                <p className="font-inter font-medium text-sm text-gray-800">
                   {article.summary}
                 </p>
               </div>

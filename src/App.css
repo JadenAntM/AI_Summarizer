@@ -14,7 +14,13 @@
   justify-content: center;
   padding: 120px 24px 160px 24px;
   pointer-events: none;
-  background-color: rgb(220, 220, 220);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(78, 144, 139, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
 @media screen and (max-width: 640px) {
@@ -23,48 +29,150 @@
   }
 }
 
+.text-eggshell {
+  color: rgb(230, 230, 230); /* Use the desired eggshell color code */
+}
+
 /* Tailwind Styles */
 
 .app {
-  @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
+  @apply relative
+    z-10
+    flex
+    justify-center
+    items-center
+    flex-col
+    max-w-7xl
+    mx-auto
+    sm:px-16
+    px-6;
 }
 
 .black_btn {
-  @apply rounded-full border border-black bg-black py-1.5 px-5 text-sm text-white transition-all hover:bg-white hover:text-black;
+  @apply rounded-full
+    border
+    border-black
+    bg-black
+    py-1.5
+    px-5
+    text-sm
+    text-white
+    transition-all
+    hover:bg-white
+    hover:text-black;
 }
 
 .head_text {
-  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl text-center;
+  @apply mt-5
+    text-5xl
+    font-satoshi
+    font-bold
+    leading-[1.15]
+    text-slate-50
+    sm:text-6xl
+    text-center;
 }
 
-.blue1_gradient {
-  @apply bg-gradient-to-r from-cyan-400 via-cyan-500 to-sky-500 bg-clip-text text-transparent;
+.purple1_gradient {
+  @apply bg-gradient-to-r
+    from-violet-800
+    via-purple-800
+    to-fuchsia-800
+    bg-clip-text
+    text-transparent;
 }
 
 .desc {
-  @apply mt-5 text-lg text-gray-600 sm:text-xl text-center max-w-2xl;
+  @apply mt-5
+    text-lg
+    text-slate-50
+    sm:text-xl
+    text-center
+    max-w-2xl;
 }
 
 .url_input {
-  @apply block w-full rounded-md border border-gray-200 bg-white py-2.5 pl-10 pr-12 text-sm shadow-lg font-satoshi font-medium focus:border-black focus:outline-none focus:ring-0;
+  @apply block
+    w-full
+    rounded-md
+    border
+    border-gray-200
+    bg-white
+    py-2.5
+    pl-10
+    pr-12
+    text-sm
+    shadow-lg
+    font-sans
+    font-medium
+    focus:border-black
+    focus:outline-none
+    focus:ring-0;
 }
 
 .submit_btn {
-  @apply hover:border-gray-700 hover:text-gray-700 absolute inset-y-0 right-0 my-1.5 mr-1.5 flex w-10 items-center justify-center rounded border border-gray-200 font-sans text-sm font-medium text-gray-400;
+  @apply hover:border-gray-700
+    hover:text-gray-700
+    absolute
+    inset-y-0
+    right-0
+    my-1.5
+    mr-1.5
+    flex
+    w-10
+    items-center
+    justify-center
+    rounded
+    border
+    border-gray-200
+    font-sans
+    text-sm
+    font-medium
+    text-gray-400;
 }
 
 .link_card {
-  @apply p-3 flex justify-start items-center flex-row bg-white border border-gray-200 gap-3 rounded-lg cursor-pointer;
+  @apply p-3
+    flex
+    justify-start
+    items-center
+    flex-row
+    bg-white
+    border
+    border-gray-200
+    gap-3
+    rounded-lg
+    cursor-pointer;
 }
 
 .copy_btn {
-  @apply w-7 h-7 rounded-full bg-white/10 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur flex justify-center items-center cursor-pointer;
+  @apply w-7
+    h-7
+    rounded-full
+    bg-white/10
+    shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)]
+    backdrop-blur
+    flex
+    justify-center
+    items-center
+    cursor-pointer;
 }
 
-.blue2_gradient {
-  @apply font-black bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
+.purple2_gradient {
+  @apply font-black
+    bg-gradient-to-r
+    from-fuchsia-400
+    to-purple-200
+    bg-clip-text
+    text-transparent;
 }
 
 .summary_box {
-  @apply rounded-xl border border-gray-200 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-4;
+  @apply rounded-xl
+    border
+    border-gray-200
+    bg-white/20
+    shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)]
+    backdrop-blur
+    p-4;
 }

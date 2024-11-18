@@ -10,6 +10,10 @@ Created a one-paragraph AI summarizer powered by OpenAI's GPT-4. It can take a U
 - Copy button to allow users to copy the summarized text
 - Error handling
 
+#Check It Out Here
+https://superlative-cendol-ab72df.netlify.app/
+(I only get 50 tokens per month)
+
 ### Technologies Used
 - React.js
 - Redux.js Toolkit
